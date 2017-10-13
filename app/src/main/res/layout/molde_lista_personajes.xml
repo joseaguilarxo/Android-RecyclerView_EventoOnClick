@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="119dp"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/idImagen"
+            android:layout_marginRight="5dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/idNombre"
+                android:textAlignment="textStart"
+                android:textStyle="normal|bold"
+                android:textSize="25sp" />
+
+            <TextView
+                android:text="Descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/idInfo"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/idImagen"
+        android:layout_marginTop="11dp"/>
+</LinearLayout>
